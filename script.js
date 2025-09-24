@@ -1,12 +1,10 @@
-function getFormvalue(event) {
+function getFormvalue() {
   event.preventDefault();
 
-  const form = document.getElementById("form1");
-  const firstName = form["fname"].value.trim();
-  const lastName = form["lname"].value.trim();
+	const fname = document.querySelector('input[name="fname"]').value.trim();
+	const lname = document.querySelector('input[name="lname"]').value.trim();
 
-  const fullName = `${firstName} ${lastName}`.trim();
-  alert(fullName);
+	alert(fname + " " + lname);
+
 }
 
-document.getElementById("form1").addEventListener("submit", getFormvalue);
