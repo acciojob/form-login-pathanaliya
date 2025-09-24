@@ -9,5 +9,4 @@ function getFormvalue(event) {
   alert(fullName);
 }
 
-// ✅ Proper binding
 document.getElementById("form1").addEventListener("submit", getFormvalue);
